@@ -1,0 +1,18 @@
+h1{
+    color: white;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 95px;
+}
+
+body{
+    background-color: black;
+    background-image: url(imgs/fndoinicio.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
