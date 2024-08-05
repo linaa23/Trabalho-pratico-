@@ -16,3 +16,19 @@ body{
     font-family: Oswald;
     src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
+
+@font-face {
+    font-family: Oswaldd;
+    src: url(fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+#enter{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Oswaldd;
+}
+
+#enter:hover{
+    background-color: rgb(206, 219, 219);
+    color: rgb(48, 3, 3);
+}
