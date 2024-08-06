@@ -27,9 +27,12 @@ body{
     color: black;
     font-family: Oswaldd;
     display: block;
+    padding: 10px 25px;
     margin: 0 auto;
     width: fit-content;
-    
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
 }
 
 #enter:hover{
