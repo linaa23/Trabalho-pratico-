@@ -26,6 +26,10 @@ body{
     background-color: rgb(255, 255, 255);
     color: black;
     font-family: Oswaldd;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    
 }
 
 #enter:hover{
