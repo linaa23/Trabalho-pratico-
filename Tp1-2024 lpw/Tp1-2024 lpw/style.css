@@ -10,6 +10,7 @@ body{
     background-image: url(imgs/fndoinicio.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    align-items: center;
 }
 
 @font-face {
@@ -38,4 +39,17 @@ body{
 #enter:hover{
     background-color: rgb(206, 219, 219);
     color: rgb(48, 3, 3);
+}
+
+#titulo::selection{
+    color: white;
+    background-color: gray;
+}
+
+#titulo-div{
+ 
+    position: absolute;
+    top: 25%;
+    left: 27%;
+ 
 }
