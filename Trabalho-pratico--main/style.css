@@ -1,0 +1,62 @@
+h1{
+    color: white;
+    text-align: center;
+    font-family: Oswald;
+    font-size: 95px;
+}
+
+body{
+    background-color: black;
+    background-image: url(imgs/fndoinicio.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+}
+
+@font-face {
+    font-family: Oswald;
+    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Oswaldd;
+    src: url(fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+#enter{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: Oswaldd;
+    display: block;
+    padding: 10px 25px;
+    margin: 0 auto;
+    width: fit-content;
+    border-radius: 25px;
+    font-size: 20px;
+    text-align: center;
+}
+
+#enter:hover{
+    background-color: rgb(206, 219, 219);
+    color: rgb(48, 3, 3);
+    transform: translateY(-4px) translateX(-2px);
+    box-shadow: 2px 5px 0 0 #003cff;
+}
+
+#enter:active {
+    transform: translateY(2px) translateX(1px);
+    box-shadow: 0 0 0 0 #0db1ca;
+}
+
+#titulo::selection{
+    color: white;
+    background-color: gray;
+}
+
+#titulo-div{
+ 
+    position: absolute;
+    top: 25%;
+    left: 27%;
+ 
+}
