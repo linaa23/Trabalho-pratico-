@@ -1,0 +1,97 @@
+body{
+    background-color: black;
+    text-align: center;
+    overflow: hidden;
+}
+
+#imgcorpo{
+    position: absolute;
+    top: 21%;
+    left: 42%;
+    width: 250px;
+}
+
+@font-face {
+    font-family: BrightRetro;
+    src: url(../fonts/BrightRetro.otf);}
+
+@font-face {
+    font-family: Barosa;
+    src: url(../fonts/FontsFree-Net-Barosa-Regular.ttf);
+}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(../fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+header {
+    font-family: BrightRetro;
+    color: white;
+    font-size: 120px;
+    letter-spacing: 1.4px;
+    
+}
+
+
+#menu {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+#navigator {
+  height: 50px;
+  line-height: 30px;
+  box-shadow: 5px 7px 25px -5px #3437ff;
+}
+
+#navigator ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#navigator li {
+  position: relative;
+}
+
+#navigator > ul > li > a {
+  color: #fefefe;
+  font-size: 15px;
+  font-family: SemiBold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  text-align: center;
+  display: block;
+  padding: 11px 55px;
+  background: #353538;
+  text-decoration: none;
+}
+
+
+
+@media screen and (max-width: 640px) {
+  #navigator ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navigator ul ul {
+    position: static;
+    display: none;
+  }
+
+  #navigator li:hover > ul,
+  #navigator li:focus-within > ul {
+    display: block;
+  }
+
+  #navigator ul ul li {
+    text-align: center;
+  }
+}
+
+
+
+
