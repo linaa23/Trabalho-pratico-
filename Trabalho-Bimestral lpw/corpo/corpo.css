@@ -1,23 +1,29 @@
-body{
-    background-color: black;
-    text-align: center;
-    overflow: hidden;
+body {
+  background-color: black;
+  text-align: center;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
 }
 
-#imgcorpo{
-    position: absolute;
-    top: 21%;
-    left: 42%;
-    width: 250px;
+#imgcorpo {
+  max-width: 100%;
+  height: auto;
+  position: absolute;
+  top: 21%;
+  left: 42%;
+  width: 250px;
 }
 
 @font-face {
-    font-family: BrightRetro;
-    src: url(../fonts/BrightRetro.otf);}
+  font-family: BrightRetro;
+  src: url(../fonts/BrightRetro.otf);
+}
 
 @font-face {
-    font-family: Barosa;
-    src: url(../fonts/FontsFree-Net-Barosa-Regular.ttf);
+  font-family: Barosa;
+  src: url(../fonts/FontsFree-Net-Barosa-Regular.ttf);
 }
 
 @font-face {
@@ -26,20 +32,15 @@ body{
 }
 
 header {
-    font-family: BrightRetro;
-    color: white;
-    font-size: 120px;
-    letter-spacing: 1.4px;
-    
-}
-
-
-#menu {
-  max-width: 760px;
-  margin: 0 auto;
+  font-family: BrightRetro;
+  color: white;
+  font-size: 120px;
+  letter-spacing: 1.4px;
 }
 
 #navigator {
+  max-width: 760px;
+  margin: 0 auto;
   height: 50px;
   line-height: 30px;
   box-shadow: 5px 7px 25px -5px #3437ff;
@@ -69,8 +70,6 @@ header {
   text-decoration: none;
 }
 
-
-
 @media screen and (max-width: 640px) {
   #navigator ul {
     flex-direction: column;
@@ -90,8 +89,73 @@ header {
   #navigator ul ul li {
     text-align: center;
   }
+
+  #imgcorpo {
+    width: 90%;
+    top: 30%;
+  }
+
+  #navigator {
+    line-height: 20px;
+    max-width: 200px;
+    margin: 0;
+    box-shadow: -130px 15px 60px 140px #3437ff;
+  }
 }
 
+.modal-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 
+.esque-icon {
+  width: 100px;
+  height: auto;
+}
 
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
 
+.modal-content {
+  background-color: rgb(4, 11, 116);
+  color: white;
+  font-family: BrightRetro;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  position: relative;
+}
+
+.modal-content::selection {
+  background-color: #1a1b4d;
+  color: #515155;
+}
+
+h2 {
+  font-family: SemiBold;
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 25px;
+  cursor: pointer;
+}
