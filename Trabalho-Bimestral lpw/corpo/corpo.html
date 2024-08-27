@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anatomy Explorer</title>
     <link rel="stylesheet" href="corpo.css" />
+    <link rel="icon" href="../imgs/logodnv.png">
   </head>
 
   <body>
@@ -12,7 +13,6 @@
     
     <header>
 
-      <div id="menu">
         <div id="navigator">
           <ul class="nav">
         
@@ -23,8 +23,40 @@
             <li><a href="../m.i/mi.html" title="">m.i</a></li>
           </ul>
         </div>
-      </div>
 
     </header>
+
+ <button id="open-modal" class="modal-button">
+        <img src="../imgs/esqueleto.jpg" alt="esqueleto" class="esque-icon" />
+    </button>
+
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <h2><u>Autores do Site</u></h2>
+            <p>CAIO RICARDO FERNANDES</p>
+            <p>EMILY RODRIGUES DA SILVA</p>
+            <p>NICOLLY CAROLINA DA SILVA FERNANDES</p>
+        </div>
+    </div>
+
+    <script>
+      const modal = document.getElementById('modal');
+      const openModalButton = document.getElementById('open-modal');
+      const closeModalButton = document.getElementById('close-modal');
+
+      openModalButton.addEventListener('click', () => {
+      modal.style.display = 'flex'; 
+      });
+
+
+      closeModalButton.addEventListener('click', () => {
+      modal.style.display = 'none'; 
+      });
+
+    </script>
+        
+    </div>
   </body>
 </html>
