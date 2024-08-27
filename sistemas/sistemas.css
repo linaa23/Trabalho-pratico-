@@ -1,0 +1,33 @@
+body {
+    background-color: black;
+}
+
+h1{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+}
+
+#sistresp{
+    width: 160px;
+    height: 160px;
+    margin-left: 100px;
+}
+
+#sistdig{
+    width: 160px;
+    height: 160px;
+    margin-left: 130px;
+}
+
+#sistnerv{
+    width: 160px;
+    height: 160px;
+    margin-left: 160px;
+}
+
+#sistcircul{
+    width: 160px;
+    height: 160px;
+    margin-left: 190px;
+}
