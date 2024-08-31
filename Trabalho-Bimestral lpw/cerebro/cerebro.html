@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cérebro</title>
+    <link rel="stylesheet" href="cerebro.css" />
+    <link rel="icon" href="../imgs/icon cerebro.png" />
+  </head>
+  <body>
+    <div id="v_inicio">
+      <video
+        id="video_i"
+        autoplay
+        muted
+        src="../imgs/video_cerebro.mp4"
+        type="video/mp4"
+      ></video>
+      <button id="passar_v">▶</button>
+    </div>
 
+    <div id="pagprincipal">
+      <h1>Cérebro</h1>
+      <img src="../imgs/partescereb.jfif" alt="divisaocerebro" />
+      
+      <div id="p">
+
+      <p id="cortex">
+        Córtex Cerebral: A camada externa do cérebro, responsável por funções
+        como pensamento, percepção, memória, linguagem e consciência. É dividido
+        em quatro lobos: Lobo Frontal: Envolvido no raciocínio, planejamento,
+        movimento, emoções e resolução de problemas. Lobo Parietal: Relacionado
+        à percepção sensorial e integração de informações, como toque,
+        temperatura e dor. Lobo Temporal: Associado à audição, memória e
+        reconhecimento de rostos e objetos. Lobo Occipital: Principalmente
+        responsável pelo processamento visual.
+      </p>
+      <p id="tronco">
+        Tronco Cerebral: Conecta o cérebro à medula espinhal e controla funções
+        vitais automáticas, como respiração, batimentos cardíacos e pressão
+        arterial. Inclui: Mesencéfalo: Envolvido em funções motoras e na
+        regulação da resposta ao som. Ponte: Atua como uma ponte entre várias
+        partes do sistema nervoso central, incluindo o córtex e o cerebelo.
+        Bulbo Raquidiano: Controla funções involuntárias vitais, como a
+        respiração e os batimentos cardíacos.
+      </p>
+
+      </p>
+
+      <p id="limbico">
+        Sistema Límbico: Um conjunto de estruturas localizadas no interior do
+        cérebro, envolvidas em emoções, comportamento, motivação e memória.
+        Inclui: Hipotálamo: Regula funções vitais, como fome, sede, temperatura
+        corporal e ritmos circadianos. Hipocampo: Fundamental para a formação de
+        novas memórias e a navegação espacial. Amígdala: Importante para o
+        processamento de emoções, como medo e prazer.
+      </p>
+
+      <p id="ganglios">
+        Cerebelo: Localizado na parte de trás do cérebro, abaixo dos lobos
+        occipitais. É responsável pela coordenação motora, equilíbrio e precisão
+        dos movimentos.
+        Gânglios da Base: Um grupo de núcleos localizados profundamente no
+        cérebro, envolvidos na regulação dos movimentos voluntários e no
+        aprendizado de habilidades motoras.
+      </p>
+      </div>
+
+      <h5 class="info">
+        Leia mais em
+        <a
+          href="https://www.cognifit.com/br/cerebro#:~:text=O%20c%C3%A9rebro%20%C3%A9%20um%20%C3%B3rg%C3%A3o,presente%20em%20todos%20os%20vertebrados."
+          target="_blank"
+          rel="noopener noreferrer"
+          >Sobre o Cérebro.</a
+        >
+      </h5>
+    </div>
+
+    <script>
+      function conteudopag() {
+        document.getElementById("v_inicio").style.display = "none";
+        document.getElementById("pagprincipal").style.display = "block";
+      }
+
+      setTimeout(conteudopag, 10000);
+
+      document
+        .getElementById("passar_v")
+        .addEventListener("click", conteudopag);
+    </script>
+  </body>
+</html>
