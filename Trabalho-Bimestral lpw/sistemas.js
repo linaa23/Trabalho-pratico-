@@ -26,3 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+document.getElementById('seta-inicio').addEventListener('click', function() {
+    window.history.back(); 
+});
+
+document.getElementById('seta-ms').addEventListener('click', function() {
+    window.history.forward(); 
+});
