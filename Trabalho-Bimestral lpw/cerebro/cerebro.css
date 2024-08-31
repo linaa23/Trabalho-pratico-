@@ -98,3 +98,44 @@ a{
 a:hover{
     color: rgb(110, 117, 214);
 }
+@media (max-width: 768px) {
+    #p {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(4, auto);
+    }
+
+    img {
+        position: static; 
+        width: 100%; 
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+
+    #passar_v {
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    h5 {
+        position: static; 
+        text-align: center; 
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+
+    #passar_v {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+}
