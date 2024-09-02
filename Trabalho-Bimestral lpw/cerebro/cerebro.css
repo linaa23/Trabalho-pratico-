@@ -37,6 +37,9 @@
 #pagprincipal{
     display: flex;
     flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
 }
 
 @font-face {
@@ -48,13 +51,16 @@
   src: url(../fonts/Oswald/static/Oswald-SemiBold.ttf);
 }
 
-img{
+#vp{
 
     height: 200px;
     width: 260px;
     position: absolute; 
     top: 0; 
-    left: 0; 
+    left: 0;
+    display: block; 
+    margin-bottom: 20px;
+
 
 }
 
@@ -62,23 +68,30 @@ h1{
     font-family: SemiBold;
     text-align: center;
     margin-top: 0;
+    color: white;
 }
 
 p{
     font-family: suse;
     margin-left: 600px; 
-    padding-top: 10px;
     margin: 0; 
-    padding: 10px;
-    background-color: #eeebeb; 
-    border: 1px solid #da0b0b; 
-    
+    padding: 50px;
+    line-height: 1.6;
+    background-color: #000000; 
+    border: 1px solid #0004d4;
+    color: white; 
+    display: inline-block; 
+}
+
+p::selection{
+    color: blue;
+    background-color: black;
 }
 
 #p{
     display: grid;
     grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(2, auto); 
+    grid-template-rows: repeat(3, auto); 
     gap: 10px; 
     margin-top: 20px; 
 }
@@ -89,10 +102,23 @@ h5{
     right: 0; 
     margin: 0; 
     padding: 5px 10px;
+    color: white;
+    font-family: suse;
+}
+
+h5::selection{
+    color: #191dff;
+    background-color: #c7c1c1;
 }
 
 a{
     color: blue;
+    font-family: suse;
+}
+
+a::selection{
+    color: #0004f1;
+    background-color: #ffff;
 }
 
 a:hover{
@@ -102,11 +128,13 @@ a:hover{
     #p {
         grid-template-columns: 1fr; 
         grid-template-rows: repeat(4, auto);
+        
     }
 
-    img {
-        position: static; 
-        width: 100%; 
+    #vp {
+        position: static;
+        height: 300px; 
+        width: 300x; 
         height: auto; 
         margin-bottom: 20px; 
     }
@@ -138,4 +166,41 @@ a:hover{
         font-size: 14px;
         padding: 6px 12px;
     }
+    #vp{
+        height: 300px; 
+        width: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #p {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    #vp {
+        position: static;
+        height: auto;
+        width: 100%; 
+        max-width: 300px; 
+        margin-bottom: 20px;
+    }
+
+    #passar_v {
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    h5 {
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+
+body{
+    background-color: black;
 }
