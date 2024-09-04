@@ -9,10 +9,13 @@ body{background-color: black;
     color: white; 
     text-align: center; 
     margin-bottom: 20px;
-    font-family: Oswald;
-    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+    font-family: SemiBold;
     }
 
+@font-face {
+        font-family: SemiBold;
+        src: url(../fonts/Oswald/static/Oswald-SemiBold.ttf);
+      }
     
 .gallery {
     display: flex; 
@@ -37,12 +40,18 @@ body{background-color: black;
     border-radius: 8px; 
     margin-bottom: 10px; 
     }
+
+
+    @font-face {
+        font-family: suse;
+        src: url(../fonts/SUSE/SUSE-VariableFont_wght.ttf);}
     
     .item p {
     text-align: left; 
     font-size: 14px;
     color: white;
     margin: 5px 0;
+    font-family: suse;
     }
     
 .toggle-btn {
@@ -60,25 +69,6 @@ body{background-color: black;
       margin-top: 10px;
     }
     
-.item img:hover {
-    transform: translateY(-10px); 
-    transition: transform 0.3s ease; 
-    }
-    
-.item img.active {
-    transform: translateY(-10px); 
-}
-
-@font-face {
-    font-family: Oswald;
-    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
-}
-
-@font-face {
-    font-family: Oswaldd;
-    src: url(fonts/Oswald/static/Oswald-SemiBold.ttf);
-}
-
 
 #voltar{
     background-color: rgb(255, 255, 255);
@@ -114,5 +104,57 @@ body{background-color: black;
     background-color: rgb(206, 219, 219);
     color: rgb(48, 3, 3);
     box-shadow: 2px 5px 0 0 #011247;
+}
+
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .item {
+        max-width: 100%; 
+    }
+
+    .item img {
+        height: auto; 
+    }
+
+    .toggle-btn {
+        font-size: 18px; 
+        padding: 6px 12px;
+    }
+
+    .info p {
+        font-size: 12px; 
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .item img {
+        height: 150px; 
+    }
+
+    .toggle-btn {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .info p {
+        font-size: 10px; 
+    }
+
+    h1 {
+        font-size: 18px; 
+    }
+
+    .nav-setas {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
 
