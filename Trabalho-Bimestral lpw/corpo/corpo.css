@@ -103,6 +103,76 @@ header {
   }
 }
 
+@media screen and (max-width: 463px) {
+  #navigator ul {
+    flex-direction: column;
+    text-align: center;
+    width: 200px;
+  }
+
+  #navigator ul ul {
+    position: static;
+    display: none;
+  }
+
+  #navigator li:hover > ul,
+  #navigator li:focus-within > ul {
+    display: block;
+  }
+
+  #navigator ul ul li {
+    text-align: center;
+  }
+
+  #imgcorpo {
+    width: 35%;
+    top: 10%;
+    margin-left: 50px;
+  }
+
+  #navigator {
+    line-height: 20px;
+    max-width: 200px;
+    margin: 0;
+    top: 50%;
+    box-shadow: -130px 15px 60px 140px #3437ff;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #navigator ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  #navigator ul ul {
+    position: static;
+    display: none;
+  }
+
+  #navigator li:hover > ul,
+  #navigator li:focus-within > ul {
+    display: block;
+  }
+
+  #navigator ul ul li {
+    text-align: center;
+  }
+
+  #imgcorpo {
+    width: 35%;
+    top: 10%;
+  }
+
+  #navigator {
+    line-height: 20px;
+    max-width: 200px;
+    margin: 0;
+    top: 50%;
+    box-shadow: -130px 15px 60px 140px #3437ff;
+  }
+}
+
 .modal-button {
   background: none;
   border: none;
