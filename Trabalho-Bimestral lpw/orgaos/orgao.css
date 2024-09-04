@@ -1,0 +1,242 @@
+#v_inicio {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(5, 4, 20);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#video_i{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#passar_v{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    opacity: 0.8;
+}
+
+#passar_v:hover{
+    opacity: 1;
+    background-color: rgb(231, 179, 223);
+}
+
+#pagprincipal{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+@font-face {
+    font-family: suse;
+    src: url(../fonts/SUSE/SUSE-VariableFont_wght.ttf);}
+
+@font-face {
+  font-family: SemiBold;
+  src: url(../fonts/Oswald/static/Oswald-SemiBold.ttf);
+}
+
+#vp{
+
+    height: 100px;
+    width: 165px;
+    position: absolute; 
+    top: 0;
+    left: 0;
+    display: block; 
+    margin-bottom: 20px;
+
+
+}
+
+h1{
+    font-family: SemiBold;
+    text-align: center;
+    margin-top: 0;
+    color: white;
+}
+
+p{
+    font-family: suse;
+    margin-left: 600px; 
+    margin: 0; 
+    padding: 50px;
+    line-height: 1.6;
+    background-color: #000000; 
+    border: 1px solid #0004d4;
+    color: white; 
+    display: inline-block; 
+}
+
+p::selection{
+    color: blue;
+    background-color: black;
+}
+
+#p{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, auto); 
+    gap: 10px; 
+    margin-top: 20px; 
+}
+
+h5{
+    position: relative; 
+    bottom: 0; 
+    right: 0; 
+    margin: 0; 
+    padding: 5px 10px;
+    color: white;
+    font-family: suse;
+}
+
+h5::selection{
+    color: #191dff;
+    background-color: #c7c1c1;
+}
+
+a{
+    color: blue;
+    font-family: suse;
+}
+
+a::selection{
+    color: #0004f1;
+    background-color: #ffff;
+}
+
+a:hover{
+    color: rgb(110, 117, 214);
+}
+@media (max-width: 768px) {
+    #p {
+        grid-template-columns: 1fr; 
+        grid-template-rows: repeat(4, auto);
+        
+    }
+
+    #vp {
+        position: static;
+        height: 300px; 
+        width: 300x; 
+        height: auto; 
+        margin-bottom: 20px; 
+    }
+
+    #passar_v {
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    h5 {
+        position: static; 
+        text-align: center; 
+        margin: 10px 0; 
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 24px; 
+    }
+
+    p {
+        font-size: 14px; 
+    }
+
+    #passar_v {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    #vp{
+        height: 300px; 
+        width: 300px;
+    }
+}
+
+@media (max-width: 1024px) {
+    #p {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    #vp {
+        position: static;
+        height: auto;
+        width: 100%; 
+        max-width: 300px; 
+        margin-bottom: 20px;
+    }
+
+    #passar_v {
+        bottom: 10px;
+        right: 10px;
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+
+    h5 {
+        position: static;
+        text-align: center;
+        margin: 10px 0;
+    }
+}
+
+
+body{
+    background-color: black;
+}
+
+#voltar{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: SemiBold;
+    display: block;
+    padding: 10px 25px;
+
+    font-size: 20px;
+
+}
+
+#voltar:hover{
+    background-color: rgb(206, 219, 219);
+    color: rgb(48, 3, 3);
+    box-shadow: 2px 5px 0 0 #05123d;
+}
+
+#sistemas{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: SemiBold;
+    display: block;
+    padding: 10px 25px;
+    margin-left: 91%;
+    margin-top: -50px;
+    font-size: 20px;
+
+}
+
+#sistemas:hover{
+
+    background-color: rgb(206, 219, 219);
+    color: rgb(48, 3, 3);
+    box-shadow: 2px 5px 0 0 #011247;
+}
