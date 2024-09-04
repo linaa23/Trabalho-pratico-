@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Órgãos</title>
+    <link rel="stylesheet" href="orgao.css" />
+    <link rel="icon" href="../imgs/icon_orgao-removebg-preview.png" />
+  </head>
+  <body>
+    <div id="v_inicio">
+      <video
+        id="video_i"
+        autoplay
+        muted
+        src="../imgs/orgãos.mp4"
+        type="video/mp4"
+      ></video>
+      <button id="passar_v">▶</button>
+    </div>
+
+    <div id="pagprincipal">
+      <h1>órgãos</h1>
+      <video 
+        id="vp" 
+        src="../imgs/orgãos.mp4" 
+        autoplay
+        loop
+        muted
+      ></video>
+      
+      <div id="p">
+
+      <p id="cortex">
+        <i><u>Coração</u></i>: é um órgão vital que atua como uma bomba, impulsionando o sangue através do sistema circulatório. Localizado no centro do tórax, ele é composto por quatro cavidades: dois átrios e dois ventrículos. Seu funcionamento é crucial para fornecer oxigênio e nutrientes às células do corpo, além de remover resíduos metabólicos. A saúde cardíaca é fundamental para a manutenção do bem-estar geral, e sua função é regulada por uma complexa rede de sinais elétricos que coordenam as batidas cardíacas.
+      </p>
+      <p id="tronco">
+        <i><u>Pulmão</u></i>: são órgãos essenciais para a respiração, responsáveis pela troca de gases entre o ar e o sangue. Localizados na cavidade torácica, eles capturam o oxigênio do ar inspirado e eliminam o dióxido de carbono do sangue. Cada pulmão é dividido em lobos e possui uma estrutura interna complexa de alvéolos, onde ocorre a troca gasosa. A saúde pulmonar é crucial para garantir que o oxigênio necessário seja fornecido ao corpo e que os resíduos gasosos sejam removidos de maneira eficiente.
+      </p>
+
+
+      <p id="limbico">
+        <i><u>Fígado</u></i>: é um órgão multifuncional situado no lado direito do abdômen, conhecido por suas numerosas funções metabólicas e detoxificantes. Ele processa nutrientes absorvidos pelo intestino, armazena glicose na forma de glicogênio, produz bile para a digestão de gorduras e desintoxica substâncias nocivas do sangue. Além disso, o fígado desempenha um papel importante na síntese de proteínas e na regulação de hormônios, sendo essencial para a manutenção da homeostase e da saúde geral do organismo.
+      </p>
+
+      <p id="ganglios">
+        <i><u>Estômago</u></i>: é um órgão digestivo localizado entre o esôfago e o intestino delgado. Sua principal função é quebrar e digerir os alimentos através de uma combinação de ácido gástrico e enzimas digestivas. O revestimento interno do estômago secreta ácido clorídrico e pepsina, que ajudam a desintegrar os alimentos e iniciar a digestão das proteínas. Após a digestão inicial, o estômago envia o quimo para o intestino delgado, onde a digestão e absorção de nutrientes continuam. A saúde do estômago é crucial para uma digestão eficiente e para o aproveitamento adequado dos nutrientes.
+      </p>
+      </div>
+
+      <h5 class="info">
+        Leia mais em
+        <a
+          href="https://www.biologianet.com/anatomia-fisiologia-animal/orgaos-do-corpo-humano.htm#:~:text=S%C3%A3o%20%C3%B3rg%C3%A3os%20do%20corpo%20humano,pele%2C%20c%C3%A9rebro%20e%20medula%20espinhal."
+          target="_blank"
+          >Sobre os órgãos.</a
+        >
+      </h5>
+
+        <a href="../m.s/ms.html"><button id="voltar"> M.S </button></a>
+        <a href="../m.i/mi.html"><button id="sistemas"> M.I </button></a>
+
+    </div>
+
+    <script>
+      function conteudopag() {
+        document.getElementById("v_inicio").style.display = "none";
+        document.getElementById("pagprincipal").style.display = "block";
+      }
+
+      setTimeout(conteudopag, 10000);
+
+      document
+        .getElementById("passar_v")
+        .addEventListener("click", conteudopag);
+
+    </script>
+  </body>
+</html>
