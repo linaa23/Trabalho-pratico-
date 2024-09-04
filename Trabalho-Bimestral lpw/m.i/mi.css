@@ -9,10 +9,13 @@ body{background-color: black;
     color: white; 
     text-align: center; 
     margin-bottom: 20px;
-    font-family: Oswald;
-    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+    font-family: SemiBold;
     }
 
+@font-face {
+        font-family: SemiBold;
+        src: url(../fonts/Oswald/static/Oswald-SemiBold.ttf);
+      }
     
 .gallery {
     display: flex; 
@@ -37,12 +40,18 @@ body{background-color: black;
     border-radius: 8px; 
     margin-bottom: 10px; 
     }
+
+
+    @font-face {
+        font-family: suse;
+        src: url(../fonts/SUSE/SUSE-VariableFont_wght.ttf);}
     
     .item p {
     text-align: left; 
     font-size: 14px;
     color: white;
     margin: 5px 0;
+    font-family: suse;
     }
     
 .toggle-btn {
@@ -69,33 +78,91 @@ body{background-color: black;
     transform: translateY(-10px); 
 }
 
-@font-face {
-    font-family: Oswald;
-    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+
+#voltar{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: SemiBold;
+    display: block;
+    padding: 10px 25px;
+
+    font-size: 20px;
+
 }
 
-@font-face {
-    font-family: Oswaldd;
-    src: url(fonts/Oswald/static/Oswald-SemiBold.ttf);
+#voltar:hover{
+    background-color: rgb(206, 219, 219);
+    color: rgb(48, 3, 3);
+    box-shadow: 2px 5px 0 0 #05123d;
 }
 
-.setas {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+#sistemas{
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-family: SemiBold;
+    display: block;
+    padding: 8px 5px;
+    margin-left: 91%;
+    margin-top: -50px;
+    font-size: 20px;
+
 }
 
-.nav-seta {
-    background-color: #333;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
+#sistemas:hover{
+
+    background-color: rgb(206, 219, 219);
+    color: rgb(48, 3, 3);
+    box-shadow: 2px 5px 0 0 #011247;
 }
 
-.setas:hover {
-    background-color: #555;
+@media (max-width: 768px) {
+    .gallery {
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .item {
+        max-width: 100%; 
+    }
+
+    .item img {
+        height: auto; 
+    }
+
+    .toggle-btn {
+        font-size: 18px; 
+        padding: 6px 12px;
+    }
+
+    .info p {
+        font-size: 12px; 
+    }
+
+    h1 {
+        font-size: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .item img {
+        height: 150px; 
+    }
+
+    .toggle-btn {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    .info p {
+        font-size: 10px; 
+    }
+
+    h1 {
+        font-size: 18px; 
+    }
+
+    .nav-setas {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }
