@@ -26,10 +26,15 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });   
 
-document.getElementById('seta-inicio').addEventListener('click', function() {
-    window.history.back(); 
-});
+function conteudopag() {
+    document.getElementById("v_inicio").style.display = "none";
+    document.getElementById("pagprincipal").style.display = "block";
+  }
 
-document.getElementById('seta-ms').addEventListener('click', function() {
-    window.history.forward(); 
-});
+  setTimeout(conteudopag, 10000);
+
+  document
+    .getElementById("passar_v")
+    .addEventListener("click", conteudopag);
+
+
