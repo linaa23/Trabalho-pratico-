@@ -76,8 +76,9 @@ body{background-color: black;
     font-family: SemiBold;
     display: block;
     padding: 10px 25px;
-
+    margin-left: -1024px;
     font-size: 20px;
+    margin-top: 700px;
 
 }
 
@@ -93,7 +94,7 @@ body{background-color: black;
     font-family: SemiBold;
     display: block;
     padding: 8px 5px;
-    margin-left: 91%;
+    margin-left: 300px;
     margin-top: -50px;
     font-size: 20px;
 
@@ -105,6 +106,7 @@ body{background-color: black;
     color: rgb(48, 3, 3);
     box-shadow: 2px 5px 0 0 #011247;
 }
+
 
 @media (max-width: 768px) {
     .gallery {
